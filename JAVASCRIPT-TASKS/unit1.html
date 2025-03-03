@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: linear-gradient(
+               grey,rgb(198, 86, 86),red
+            );
+            background-attachment: fixed;
+        }
+        .dropdown{
+           margin-left: 100px;
+            /* position: relative;
+            display: inline-block; */
+        }
+        img{
+            width:50px;
+           background-color: red;
+
+        }
+        .content{
+            display: none;
+            position: absolute;
+            background-color: whitesmoke;
+        }
+        .dropdown:hover .content{
+            display: block;
+            background-color: rgb(185, 69, 69);
+            margin-right: 100px;
+        
+        }
+        li{
+            list-style-type: none;
+            padding: 20px;
+
+        }
+        a{
+           color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="dropdown">
+        <img src="list.svg">
+        <div class="content">
+           <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+           <li> <a href="#">Services</a></li>
+           <li> <a href="#">Videos</a></li>
+           <li> <a href="#">Contacts</a></li>
+           <li> <a href="#">Subscribe</a></li>
+        </div>
+    </div>
+    </header>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Booking Details</title>
+    <style>
+        div#maincontent {
+            height: 200px;
+            width: 600px;
+            border: 1px solid #CEE2FA;
+            text-align: left;
+            color: #08438E;
+            font-family: calibri;
+            font-size: 15px; 
+            padding: 5px;
+        }
+        div#heading {
+            text-decoration: bold; 
+            text-align: center;
+            margin-top: 80px;
+            width: 600px;
+            border: 1px solid #CEE2FA;
+            text-align: center;
+            color: #08438E;
+            background-color: #CEE2FA;
+            font-family: calibri;
+            font-size: 20px;
+            padding: 5px;
+        }
+        h4 {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div id="heading">
+            <b>Theatre Drama</b>
+        </div>
+        <div id="maincontent">
+            <h4>Your Ticket Details:</h4>
+            <br>
+            <script>
+                  let numTickets = 4;
+                  if (numTickets > 2 && numTickets < 5) { 
+                    const discounts = [0.05, 0.07, 0.09, 0.11];
+                    let totalPrice = 0;
+                    let ticketDetails = '';
+                    for (let i = 0; i < numTickets; i++) {
+                      const discount = discounts[i] || 0;
+                      const price = 9 * (1 - discount);
+                      totalPrice += price;
+                      ticketDetails += `<p>Ticket for Customer ${i + 1} gets ${(discount * 100).toFixed(0)}% discount!, Cost is: $${price}</p>`;
+                    }
+                    document.getElementById('maincontent').innerHTML = `
+                      <h4>Your Ticket Details:</h4>
+                      ${ticketDetails}
+                      <p>For ${numTickets} tickets, you need to pay: $${totalPrice} instead of $${(9 * numTickets)}</p>`;
+                  } else if (numTickets <= 2) {
+                    const totalPrice = numTickets * 9;
+                    document.getElementById('maincontent').innerHTML = `
+                      <h4>Your Ticket Details:</h4>
+                      <p>For ${numTickets} tickets, you need to pay: $${totalPrice}</p>`;
+                  } else {
+                    document.getElementById('maincontent').innerHTML = `
+                      <h4>Error:</h4>
+                      <p>Booking is not allowed for ${numTickets} tickets.</p>`;
+                  }
+            </script>
+        </div>
+        <p>Done by 21MH1A0579</p>
+    </center>
+</body>
+</html>

@@ -1,0 +1,51 @@
+html
+    head 
+        style.
+            table,tr,th,td{
+                border:2px solid black;
+                border-collapse:collapse;
+            }
+            th{
+                background-color:green;
+                color:white;
+            }
+            input{
+                margin-left:90%;
+                margin-bottom:5px;
+                color:white;
+                background-color:green;
+                padding:5px;
+            }
+            input:hover{
+                background-color:red;
+            }
+
+    body 
+        form(action="/logout", method="get") 
+            h1 PROFILE
+            h2 PERSONAL INFORMATION 
+            input(type="submit" value="logout" )
+            table 
+                tr
+                    th NAME 
+                    th PIN NUMBER 
+                    th EMAIL 
+                    th PHONE 
+                    th DOB 
+                    th GENDER 
+                    th COLLEGE 
+                    th BRANCH 
+                    th COURSES 
+                    th ADDRESS  
+                tr
+                    td=info.name
+                    td=info.pin 
+                    td=info.email
+                    td=info.phone
+                    td=info.dob 
+                    td=info.gender 
+                    td=info.college 
+                    td=info.branch 
+                    td=info.courses
+                    td=info.address
+            

@@ -1,0 +1,79 @@
+html 
+    head 
+        title subjects registered 
+    style.
+        table
+            {
+                margin-bottom:10px;
+            }
+        table,th,td 
+            {
+                border:2px solid black;
+                border-collapse:collapse;
+            }
+    body
+        table
+             tr
+                th.center(colspan="3")
+                    span MEANSTACK 
+             tr 
+                th RollNumber 
+                th Name 
+                th Number 
+                each k in data
+                    each j in k.sub 
+                        if j==="mnst"  
+                            tr 
+                                td=k.rollnumber 
+                                td=k.name 
+                                td=k.number
+        
+
+        table
+             tr
+                th.center(colspan="3")
+                    span COMPILER DESIGN 
+             tr 
+                th RollNumber 
+                th Name 
+                th Number 
+                each k in data
+                    each j in k.sub 
+                        if j==="cd"  
+                            tr 
+                                td=k.rollnumber 
+                                td=k.name 
+                                td=k.number
+        
+        table
+             tr
+                th.center(colspan="3")
+                    span CNS 
+             tr 
+                th RollNumber 
+                th Name 
+                th Number 
+                each k in data
+                    each j in k.sub 
+                        if j==="cns"  
+                            tr 
+                                td=k.rollnumber 
+                                td=k.name 
+                                td=k.number
+
+        table
+             tr
+                th.center(colspan="3")
+                    span MACHINE LEARNING 
+             tr 
+                th RollNumber 
+                th Name 
+                th Number 
+                each k in data
+                    each j in k.sub 
+                        if j==="ml"  
+                            tr 
+                                td=k.rollnumber 
+                                td=k.name 
+                                td=k.number
+        

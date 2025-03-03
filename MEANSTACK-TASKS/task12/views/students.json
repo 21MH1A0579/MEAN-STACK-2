@@ -1,0 +1,31 @@
+[{
+    "id":501,
+   "name":"chaitanya",
+   "city":"rjy",
+   "depart":"cse"
+},
+{
+    "id":502,
+"name":"manik",
+"city":"vzm",
+"depart":"ece"
+},
+{
+    "id":503,
+    "name":"mouli",
+    "city":"vizag",
+    "depart":"cse"
+    },
+    {
+        "id":504,
+        "name":"sai",
+        "city":"delhi",
+        "depart":"eee"
+        },
+        {
+            "id":505,
+            "name":"nikhil",
+            "city":"kkd",
+            "depart":"mech"
+        }
+]

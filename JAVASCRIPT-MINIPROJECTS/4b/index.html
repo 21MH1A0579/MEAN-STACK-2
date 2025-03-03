@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <style>
+            div{
+                margin:auto;
+                margin-top:200px;
+                border:10px double black ;
+                height:250px;
+                padding:10px;
+                width:400px;
+                font-size: 30px;
+                font-style:bold;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+        <p>Details of the person are : </p>
+        <script>
+            class Employee{
+                constructor(name,age){
+                    this.name=name;
+                    this.age=age;
+                }
+            }
+            class  Person extends Employee{
+                constructor(name,age,role,phone){
+                    super(name,age);
+                    this.role=role;
+                    this.phone=phone;
+                }
+            }
+            function getdetails(){
+                document.write("Name : "+person.name);
+                document.write("<br>");
+                document.write("Age : "+person.age);
+                document.write("<br>");
+                document.write("Role : "+person.role);
+                document.write("<br>");
+                document.write("Phone : "+person.phone);
+                document.write("<br>");
+            }
+            const person=new Person('chaitanya',20,'Mean Stack Developer',9573282201);
+            getdetails();
+        </script>
+        </div>
+    </body>
+</html>

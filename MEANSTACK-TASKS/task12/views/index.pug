@@ -1,0 +1,21 @@
+html 
+  head 
+    style. 
+      table,td,th
+        {
+          border:2px solid black;
+          border-collapse:collapse;
+        } 
+  body 
+    table 
+      tr 
+        th id 
+        th name 
+        th city 
+        th depart  
+      each student in std 
+        tr
+          td=student.id
+          td=student.name
+          td=student.city
+          td=student.depart

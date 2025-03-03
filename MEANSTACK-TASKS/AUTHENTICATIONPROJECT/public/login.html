@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/profile" method="post" id="myForm">
+        <table align="center">
+          <th colspan="2">Sign In</th>  
+          <tr>
+            <td><label>PIN NO:</label></td>
+            <td><input type="text" name="lpin" placeholder="Enter YOUR PIN Number"></td>
+          </tr>
+          <tr>
+            <td><label>PASSWORD:</label></td>
+            <td><input type="text" name="lpass" placeholder="Enter Your Login Password"></td>
+          </tr>
+           <tr>
+            <td><input type="submit"></td>
+            <td><input type="reset"></td>
+          </tr>
+        </table>
+    </form>
+</body>
+<script>
+  window.onload = function() {
+      if (window.history.replaceState) {
+          window.history.replaceState(null, null, window.location.href);
+      }
+      window.addEventListener('pageshow', function(event) {
+        var form = document.getElementById('myForm');
+        if (event.persisted || (window.performance && 
+            window.performance.navigation.type === 2)) {
+            form.reset();
+        }
+    });
+  }
+  </script>
+</html>

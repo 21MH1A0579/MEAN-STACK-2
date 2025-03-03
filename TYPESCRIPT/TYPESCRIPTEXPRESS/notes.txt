@@ -1,0 +1,48 @@
+npm init
+npm install express
+npm install typescript
+npm install @types/express @types/node
+npx tsc --init
+open tsconfig.json file 
+npx tsc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import express,{Express,Request,Response, urlencoded} from "express";
+import { json } from "stream/consumers";
+const app=express();
+app.listen(3000,()=>{
+    console.log("Server Running SuccessFully");
+})
+app.use(express.urlencoded());
+app.use(express.json());
+app.get('/cse',(req:Request,res:Response)=>{
+    res.send("Welcome to TypeScript From MEANSTACK DEVELOPERS");
+})
+app.post('/post',(req:Request,res:Response)=>{
+    var data:string=req.body.data;
+    res.send("Welcome to TypeScript from Post Method and data is:"+data)
+})
+app.put('/cse',(req:Request,res:Response)=>{
+    res.send("Welcome to TypeScript from Put Method")
+})
+app.delete('/cse/:id',(req:Request,res:Response)=>{
+    var id:string=req.params.id;
+    res.send("Welcome to TypeScript from Delete Method"+id)
+})
+
+app.patch('/cse',(req:Request,res:Response)=>{
+    res.send("Welcome to TypeScript from Patch Method")
+})

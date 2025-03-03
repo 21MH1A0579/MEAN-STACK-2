@@ -1,0 +1,11 @@
+csecolor=pink
+body
+    background-color csecolor
+border-radius(n)
+    border n solid red
+h1
+    border-radius(5px)
+h2
+    border-radius(3px)111                                                                                                                       
+h3
+    border-radius(1px)

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function findCharacterFrequency(str) {
+    // Create an empty object to store character frequencies
+    let frequency = {};
+
+    // Loop through each character in the string
+    for (let i = 0; i < str.length; i++) {
+        let character = str.charAt(i);
+
+        // If the character already exists in the frequency object, increment its count
+        if (frequency[character]) {
+            frequency[character]++;
+        } else {
+            // Otherwise, initialize its count to 1
+            frequency[character] = 1;
+        }
+    }
+
+    // Convert the frequency object into an array of objects with 'character' and 'occurrences' fields
+    let result = [];
+    for (let char in frequency) {
+        result.push({ character: char, occurrences: frequency[char] });
+    }
+
+    return result;
+}
+
+// Example usage:
+let str = "hello world";
+let frequencyArray = findCharacterFrequency(str);
+console.log(frequencyArray);
+
+
+    </script>
+</body>
+</html>

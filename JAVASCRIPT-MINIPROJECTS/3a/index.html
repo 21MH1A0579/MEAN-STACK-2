@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Area of a Circle</title>
+  </head>
+  <body>
+    <h1>Area of a Circle</h1>
+    <p>Enter the radius:</p>
+    <input type="number" id="radius">
+    <button onclick="calculateArea()">Calculate Area</button>
+    <p id="result"></p>
+    <p>Done by 21MH1A0579</p>
+    <script>
+        const pi=3.15;
+        function calculateArea() {
+            radius = document.getElementById("radius").value;
+            let area = pi*radius*radius;
+            document.getElementById("result").innerHTML = `The area of the circle with radius ${radius} is ${area.toFixed(2)}`;
+        }
+    </script>
+  </body>
+</html>

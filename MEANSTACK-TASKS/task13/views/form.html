@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="checkbox"]{
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="/display" method="post">
+        <table>
+            <tr>
+            <td><h3>Enter Your RollNumber:</h3></td>
+            <td><input type="text" name="uroll"></td>
+           </tr>
+           <tr>
+            <td><h3>Enter Your Name:</h3></td>
+            <td><input type="text" name="uname"></td>
+           </tr>
+           <tr>
+            <td><h3>Enter Your PhoneNumber:</h3></td>
+            <td><input type="number" name="uphone"></td>
+        </tr>
+        <tr>
+            <td>
+            <input type="checkbox" name="mnst">MNST
+            <input type="checkbox" name="cns">CNS
+            <input type="checkbox" name="cd">CD
+            <input type="checkbox" name="ml">ML
+        </td>
+        </tr>
+        <tr>
+           <td><input type="submit"></td>
+        </tr>
+        </table>
+    </form>
+</body>
+</html>

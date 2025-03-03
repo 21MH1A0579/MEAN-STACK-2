@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var myHobby=prompt("Enter Your Hobby");
+        var age=prompt("Enetr your age");
+        localStorage.setItem("myHobby",myHobby);
+        localStorage.setItem("age",age);
+        console.log(localStorage.getItem("myHobby"));
+        console.log(localStorage.getItem("age"));
+    </script>
+</body>
+</html>

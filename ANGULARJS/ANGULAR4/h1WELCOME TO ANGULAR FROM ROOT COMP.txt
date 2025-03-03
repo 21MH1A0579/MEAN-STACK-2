@@ -1,0 +1,103 @@
+<h1>WELCOME TO ANGULAR FROM ROOT COMPONENT</h1>
+<app-cserocks [data]="mst" [xyz]="cse" [pers]="persons"></app-cserocks>
+
+
+
+
+
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { CserocksComponent } from './cserocks/cserocks.component';
+@Component({
+  selector: 'app-root',
+  standalone: true,
+  imports: [RouterOutlet,CserocksComponent],
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.css'
+})
+export class AppComponent {
+  cse=["Python","MEANSTACK","Android","Devops","MAchine Learning"];
+  mst="welcome to meanstack";
+  persons=[
+    {
+      id:501,
+      name:"Durga",
+      branch:"CSE"
+    },
+    {
+      id:502,
+      name:"Prasad",
+      branch:"IT"
+    }
+  ];
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import { Component,Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
+@Component({
+  selector: 'app-cserocks',
+  standalone: true,
+  imports: [CommonModule],
+  templateUrl: './cserocks.component.html',
+  styleUrl: './cserocks.component.css'
+})
+export class CserocksComponent {
+          @Input() data:any;
+          @Input() xyz:any;
+          @Input() pers:any;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import { Component,Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
+@Component({
+  selector: 'app-cserocks',
+  standalone: true,
+  imports: [CommonModule],
+  templateUrl: './cserocks.component.html',
+  styleUrl: './cserocks.component.css'
+})
+export class CserocksComponent {
+          @Input() data:any;
+          @Input() xyz:any;
+          @Input() pers:any;
+}
+

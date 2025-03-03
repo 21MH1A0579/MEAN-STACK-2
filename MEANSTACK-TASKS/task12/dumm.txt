@@ -1,0 +1,82 @@
+
+html
+  head
+    style.
+      body {
+        background-color: cyan;
+      }
+      .student-list
+        {
+          display: flex;
+          flex-direction: row;
+        }
+        .student-item
+          {
+            list-style-type: square;
+            margin-right: 20px;
+          }
+  body
+    .student-list
+      each student in students
+        ul.student-item
+          li= student.name
+          li= student.city 
+          li= student.depart
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html
+  head
+    style.
+      body {
+        background-color: white;
+      }
+      .student-table
+        {
+          display: table;
+          margin-left: 20%; 
+        }
+        .student-h 
+            {
+                color:green;
+                display: table-row;
+                font-weight:bold;
+            }
+        .student-row
+          {
+            display: table-row;
+          }
+          .student-cell
+            {
+              display: table-cell;
+              padding: 5px 10px;
+              border: 1px solid black;
+            }
+  body
+    .student-table
+      .student-h
+        .student-cell ID
+        .student-cell Name
+        .student-cell City
+        .student-cell Department
+      each student in students
+        .student-row
+          .student-cell= student.id
+          .student-cell= student.name
+          .student-cell= student.city
+          .student-cell= student.depart

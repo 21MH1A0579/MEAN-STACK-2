@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Booking Summary</title>
+    <style>
+        div#maincontent {
+            height: 250px;
+            width: 500px;
+            border: 1px solid #CEE2FA;
+            text-align: left;
+            color: #08438E;
+            font-family: calibri;
+            font-size: 20;
+            padding: 5px;
+        }
+        div#heading {
+            text-decoration: bold;
+            text-align: center;
+            margin-top: 80px;
+            width: 500px;
+            border: 1px solid #CEE2FA;
+            text-align: center;
+            color: #08438E;
+            background-color: #CEE2FA;
+            font-family: calibri;
+            font-size: 20;
+            padding: 5px;
+        }
+        h2 {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div id="heading">
+            <h2>Booking Summary</h2>
+        </div>
+        <div id="maincontent">
+            <script>
+                document.write("Actual cost per ticket:9$");
+                document.write("<br><br>");
+                document.write("5 seats are avilabble for festive discount!!!");
+                document.write("<br><br>");
+                document.write("5% discount! on ticket 1");
+                document.write("<br>");
+                document.write("7% discount! on ticket 2");
+                document.write("<br>");
+                document.write("9% discount! on ticket 3");
+                document.write("<br>");
+                document.write("11% discount! on ticket 4");
+                document.write("<br>");
+                document.write("13% discount! on ticket 5");
+                document.write("<br><br>");
+                calculateDiscount=(n)=>{ 
+                    return (n*9)*((2*n+3)/100);
+                }
+                function calculateCost(n){
+                   if(n>=1 && n<=5){
+                    let discount=calculateDiscount(n);
+                    let cost=(n*9)-discount;
+                    document.write("Amount payable:$",cost);
+                  }
+                  if(n>=6){
+                    document.write("Booking is not allowed");s
+                   }
+                }
+                calculateCost(4);
+            </script>
+        </div>
+    </center>
+</body>
+</html>

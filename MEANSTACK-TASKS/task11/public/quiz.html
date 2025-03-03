@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quiz</title>
+    <style>
+      .quiz{
+            width: 55%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: rgba(255, 255, 255, 0.5);
+      }
+      body{
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        background-image: url('bubbles.jpg');
+        background-size: cover;
+        background-position: center;
+        justify-content: center;
+      }
+      h1{
+        text-align: center;
+        justify-content: center;
+        color: black;
+        text-shadow: 2px 2px 4px red;
+      }
+      input[type="submit"],
+      input[type="reset"] {
+        padding: 10px 20px;
+        margin: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #4CAF50;
+        color: white;
+        cursor: pointer;
+        justify-content: center;
+      }
+      input[type="submit"]:hover,
+      input[type="reset"]:hover {
+        background-color: #45a049; 
+      }
+    </style>
+  </head>
+  <body>
+    <div class="quiz">
+      <h1>Quiz</h1>
+      <form action="/result" method="post">
+        <h3>1. The great Victoria Desert is located in</h3>
+        <input type="radio" id="q1a" name="q1" value="a">
+        <label for="q1a">a) Canada</label><br>
+        <input type="radio" id="q1b" name="q1" value="b">
+        <label for="q1b">b) West Africa</label><br>
+        <input type="radio" id="q1c" name="q1" value="c">
+        <label for="q1c">c) Australia</label><br>
+        <input type="radio" id="q1d" name="q1" value="d">
+        <label for="q1d">d) North America</label><br><br>
+
+        <h3>2. The landmass of which of the following continents is the least?</h3>
+        <input type="radio" id="q2a" name="q2" value="a">
+        <label for="q2a">a) Africa</label><br>
+        <input type="radio" id="q2b" name="q2" value="b">
+        <label for="q2b">b) Asia</label><br>
+        <input type="radio" id="q2c" name="q2" value="c">
+        <label for="q2c">c) Australia</label><br>
+        <input type="radio" id="q2d" name="q2" value="d">
+        <label for="q2d">d) Europe</label><br><br>
+
+        <h3>3. What is the largest planet in our solar system?</h3>
+        <input type="radio" id="q3a" name="q3" value="a">
+        <label for="q3a">a) Earth</label><br>
+        <input type="radio" id="q3b" name="q3" value="b">
+        <label for="q3b">b) Mars</label><br>
+        <input type="radio" id="q3c" name="q3" value="c">
+        <label for="q3c">c) Jupiter</label><br>
+        <input type="radio" id="q3d" name="q3" value="d">
+        <label for="q3d">d) Saturn</label><br><br>
+
+        <h3>4. Which of these is not a programming language?</h3><input type="radio" id="q4a" name="q4" value="a">
+        <label for="q4a">a) Python</label><br>
+        <input type="radio" id="q4b" name="q4" value="b">
+        <label for="q4b">b) Java</label><br>
+        <input type="radio" id="q4c" name="q4" value="c">
+        <label for="q4c">c) C++</label><br>
+        <input type="radio" id="q4d" name="q4" value="d">
+        <label for="q4d">d) Microsoft Word</label><br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset">
+      </form>
+    </div>
+    <footer style="text-align: center;">
+      <h5>21MH1A0579</h5>
+      <h5>21MH1A0595</h5>
+      <h5>21MH1A05A2</h5>
+    </footer>
+  </body>
+  
+</html>
